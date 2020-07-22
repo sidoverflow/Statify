@@ -17,6 +17,20 @@
 		3572ABEA24C7CB930086A82E /* StatifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3572ABE924C7CB930086A82E /* StatifyUITests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		3572ABFD24C7D52F0086A82E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		3572ABDB24C7CB920086A82E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -49,6 +63,8 @@
 		3572ABE524C7CB930086A82E /* StatifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3572ABE924C7CB930086A82E /* StatifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatifyUITests.swift; sourceTree = "<group>"; };
 		3572ABEB24C7CB930086A82E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3572ABFA24C7CCA60086A82E /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		3572ABFB24C7D2750086A82E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,7 @@
 				3572ABDD24C7CB920086A82E /* StatifyTests */,
 				3572ABE824C7CB930086A82E /* StatifyUITests */,
 				3572ABC524C7CB610086A82E /* Products */,
+				3572ABF924C7CC980086A82E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,15 @@
 			path = StatifyUITests;
 			sourceTree = "<group>";
 		};
+		3572ABF924C7CC980086A82E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3572ABFB24C7D2750086A82E /* SwiftUI.framework */,
+				3572ABFA24C7CCA60086A82E /* SpotifyiOS.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +174,7 @@
 				3572ABC224C7CB600086A82E /* Resources */,
 			);
 			buildRules = (
+				3572ABFD24C7D52F0086A82E /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
